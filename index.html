@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    Name <br><br>
+    <input type="text" id="f1"><br>
+    Enter Massage<br><br>
+    <input type="text" id="f2"><br><br>
+    <button onclick="sub()">Submit</button><br><br>
+    <p id="s1"></p>
+
+    <script>
+
+        function sub(){
+        var f1 = document.getElementById("f1").value;
+        var f2 = document.getElementById("f2").value;
+
+        // let fin = f1 + f2;
+        // let final = fin;
+
+        document.getElementById("s1").innerHTML = ` ${f1} : ${f2}`;
+    }
+    </script>
+    </div>
+</body>
+</html>
